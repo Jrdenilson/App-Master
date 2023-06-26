@@ -17,7 +17,7 @@ export default function Card({ jogos }) {
       </div>
       <div className={styles.item_description}>
         <h5>{jogos.title}</h5>
-        <Link href={`/itemsdetails/${jogos.id}`} className={styles.glow_on_hover}>Detalhes</Link>
+        <Link href={`/`} className={styles.glow_on_hover}>Detalhes</Link>
       </div>
     </div>
   );

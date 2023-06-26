@@ -3,7 +3,7 @@ import { useParams, usePathname } from 'next/navigation';
 
 
 import styles from "../../styles/[generos].module.css"
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Card from "@/components/Card";
 import Loading from "@/components/Loading";
 
@@ -63,7 +63,7 @@ export default function Genero() {
     return (
         <div className={styles.item_container}>
             <div className={styles.cards}>
-        {data !== null ? data.map((jogo)=> jogo.genre ==trechoRemovido ? <Card key={jogo.id} jogos={jogo}/> : null) : <Loading />}
+        {data !== null ? data.map((jogo)=> jogo.genre ==trechoRemovido ? <Card key={jogo.id} jogos={jogo}/> : null) : <Loading/>}
             </div>
         </div>
     )

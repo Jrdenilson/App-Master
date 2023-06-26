@@ -6,6 +6,7 @@ import styles from "@/styles/Home.module.css";
 
 import { Suspense, lazy } from "react";
 import Principal from "@/components/Principal";
+import Loading from "@/components/Loading";
 
 
 export async function getStaticProps() {
@@ -51,8 +52,10 @@ export default function Home(games) {
   return (
     <>
       
-        
+        <Suspense fallback={<Loading />}>
           <Principal jogos={jogos} />
+        </Suspense>
+          
         
         
       

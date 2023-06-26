@@ -19,16 +19,7 @@ export default function Navbar({ games }) {
                         Home
                     </Link>
                 </li>
-                <li>
-                    <Link href="/about">
-                        Sobre
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/contact">
-                        Contato
-                    </Link>
-                </li>
+
                 
             </ul>
         </nav>
